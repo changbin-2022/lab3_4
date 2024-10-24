@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JellyEtude</title>
+    <link rel="stylesheet" href="JellyEtude.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('navList');
+            navList.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-title">
+            <h1 id="site-title">JellyEtude</h1>
+        </div>
+    </header>    
+    <main>
+        <nav class="navigation"> 
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-list" id="navList">
+                <li><a href="#about">Про медуз</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#species">Види медуз</a></li>
+                <li><a href="#jellyfish-stats">Статистика видів медуз</a></li>
+            </ul>
+        </nav>
+        
+        <section id="about" class="about-section">
+            <h2>Про медуз</h2>
+            <p>Медузи — це морські істоти, відомі своєю прозорістю та чудернацькою формою. Вони існують вже мільйони років і відіграють важливу роль в океанських екосистемах.</p>
+            <h3>Класифікація медуз</h3>
+            <ul class="classification-list">
+                <li>Сцифоїдні медузи</li>
+                <li>Кубомедузи</li>
+                <li>Гідромедузи</li>
+            </ul>
+            <h3>Роль в екосистемі</h3>
+            <p>Медузи є важливими ланками в харчових ланцюгах, оскільки вони є їжею для багатьох видів риб та інших морських тварин. Крім того, медузи допомагають підтримувати рівновагу морської екосистеми.</p>
+        </section>
+        
+        <section id="gallery" class="gallery-section">
+            <h2>Галерея медуз</h2>
+            <div class="gallery-grid">
+                <figure class="lion-mane" data-species="lion-mane">
+                    <img src="https://i.pinimg.com/564x/9b/98/39/9b98390dd2a711ffe9a296140eab962c.jpg" alt="Лев'яча грива">
+                    <figcaption>Лев'яча грива</figcaption>
+                </figure>
+                <figure class="moon" data-species="moon">
+                    <img src="https://i.pinimg.com/enabled_hi/564x/95/7e/b6/957eb68ada4e12abcb01fc92dd3a61d3.jpg" alt="Аурелія">
+                    <figcaption>Аурелія</figcaption>
+                </figure>
+                <figure class="box" data-species="box">
+                    <img src="https://i.pinimg.com/564x/78/07/06/780706ae9d2e4b0988a0be9bfde0a32a.jpg" alt="Кубомедуза">
+                    <figcaption>Кубомедуза</figcaption>
+                </figure>
+                <figure class="moon" data-species="moon">
+                    <img src="https://i.pinimg.com/564x/43/94/24/4394244bd9ca608de25b1edb67c00136.jpg" alt="Аурелія">
+                    <figcaption>Аурелія</figcaption>
+                </figure>
+            </div>
+        </section>
+    
+        <section id="species" class="species-section">
+            <h2>Види медуз</h2>
+            <div class="species-list">
+                <article class="species-item">
+                    <h3>Лев'яча грива (Cyanea capillata)</h3>
+                    <p>Найбільший вид медуз, що має довгі щупальця, які можуть сягати кількох метрів.</p>
+                    <a href="lion-mane-jellyfish.html" class="details-link">Детальніше</a>
+                </article>
+                <article class="species-item">
+                    <h3>Кубомедуза (Chironex fleckeri)</h3>
+                    <p>Маленька, але дуже небезпечна медуза, відома своїм потужним токсином.</p>
+                    <a href="box-jellyfish.html" class="details-link">Детальніше</a>
+                </article>
+                <article class="species-item">
+                    <h3>Аурелія (Aurelia aurita)</h3>
+                    <p>Часто зустрічається медуза з білими кільцями, легко впізнаваними серед інших видів.</p>
+                    <a href="moon-jellyfish.html" class="details-link">Детальніше</a>
+                </article>
+            </div>
+        </section>
+    
+        <section id="jellyfish-stats" class="stats-section">
+            <h2>Статистика видів медуз</h2>
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Назва виду</th>
+                        <th class="max-size">Максимальний розмір (м)</th>
+                        <th>Місце проживання</th>
+                        <th>Небезпека для людини</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Лев'яча грива (Cyanea capillata)</td>
+                        <td class="max-size">2.3</td>
+                        <td>Північний Атлантичний океан</td>
+                        <td>Середня</td>
+                    </tr>
+                    <tr>
+                        <td>Кубомедуза (Chironex fleckeri)</td>
+                        <td class="max-size">0.3</td>
+                        <td>Тихий та Індійський океани</td>
+                        <td>Висока</td>
+                    </tr>
+                    <tr>
+                        <td>Аурелія (Aurelia aurita)</td>
+                        <td class="max-size">0.4</td>
+                        <td>Усі океани</td>
+                        <td>Низька</td>
+                    </tr>
+                </tbody>                
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 JellyEtude. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
